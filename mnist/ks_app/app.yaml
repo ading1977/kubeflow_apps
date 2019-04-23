@@ -1,4 +1,11 @@
 apiVersion: 0.3.0
+environments:
+  mnist:
+    destination:
+      namespace: mnist
+      server: https://52.34.125.148:6443
+    k8sVersion: v1.13.2
+    path: mnist
 kind: ksonnet.io/app
 libraries:
   kubeflow/tf-serving:
